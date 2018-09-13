@@ -1,6 +1,6 @@
-# Packer template to create a vagrant box containing REDIS using VirtualBox
+# Packer template to create a vagrant box containing MYSQL using VirtualBox
 
-This repository contains a Packer template for building a vagrant box containing REDIS using VirtualBox
+This repository contains a Packer template for building a vagrant box containing MYSQL using VirtualBox
 
 ## Usage
 
@@ -13,7 +13,7 @@ This repository contains a Packer template for building a vagrant box containing
 
 ```
 $ export VAGRANT_CLOUD_TOKEN=<Your ATLAS / Vagrant Cloud Token>
-$ packer build redis64.json
+$ packer build mysql.json
 ```
 6. "After testing, "release" the version in the [Vagrant Cloud website](https://app.vagrantup.com/)
 
@@ -23,7 +23,6 @@ Also the BOX should be uploaded automagically to the Vagrant Cloud.
 ## To use the box with Vagrant:
 
 ```
-$ vagrant init qwerty1979/redis64
+$ vagrant init qwerty1979/mysql
 $ vagrant up
 ```
-
