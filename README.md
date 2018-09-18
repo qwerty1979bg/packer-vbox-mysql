@@ -26,3 +26,8 @@ Also the BOX should be uploaded automagically to the Vagrant Cloud.
 $ vagrant init qwerty1979/mysql
 $ vagrant up
 ```
+
+## Use `kitchen` to check the build:
+
+1. [Install Chef/Kitchen](https://kitchen.ci/docs/getting-started/installing/)
+2. Run `kitchen test`
